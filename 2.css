@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+}
+div.group{
+    background-color: blanchedalmond;
+    border: 2px solid orange;
+    font-size: 150%;
+    
+    width: 320px;
+        clip-path: polygon(
+    0 10px,
+    10px 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    0 100%
+  )
+}
+header{
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+div div{
+    padding: 5px;
+    color: orange;
+}
+div div:hover{
+    background-color: white;
+    color: black;
+}
+a{
+    color: inherit;
+    text-decoration:none;
+}
