@@ -1,0 +1,7 @@
+SELECT id, nazwa, wystepowanie from ryby where styl_zycia=1;
+
+select Ryby_id, wymiar_ochronny from Okres_ochronny where wymiar_ochronny<30;
+
+select r.nazwa, l.akwen, l.wojewodztwo from ryby as r, lowisko as l where r.id= l.ryby_id and l.rodzaj=3;
+
+ALTER TABLE ryby add column dobowy_limit tinyint unsigned;
