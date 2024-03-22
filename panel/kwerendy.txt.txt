@@ -1,0 +1,9 @@
+select id, imie, nazwisko, rok_urodzenia, zdjecie from osoby limit 30;
+
+SELECT osoby.imie, osoby.nazwisko, osoby.rok_urodzenia, osoby.opis, osoby.zdjecie, hobby.nazwa from osoby, hobby where osoby.hobby_id= hobby.id and osoby.id=10;
+
+SELECT cast( avg(rok_urodzenia) as int), min(rok_urodzenia), max(rok_urodzenia) from osoby;
+
+UPDATE osoby set opis="Gotowac" where Hobby_id=4;
+
+
