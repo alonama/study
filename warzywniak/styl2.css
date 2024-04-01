@@ -1,0 +1,47 @@
+body{
+    font-family: Garamond;
+}
+#jeden{
+    background-color: #00600F;
+    color: white;
+    text-align: center;
+    height: 90px;
+    width: 75%;
+    float: left;
+}
+#dwa{
+    background-color: #00600F;
+    color: white;
+    height: 90px;
+    width: 25%;
+    float: right;
+}
+section{
+    background-color: #C8E6C9;
+    height: 600px;
+    overflow: scroll;
+    width: 100%;
+
+}
+footer{
+    background-color: #00600F;
+    color: white;
+}
+h5{
+    background-color: #00600F;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 200%;
+}
+h2{
+    text-align: right;
+}
+div{
+    margin: 10px;
+    border-style: solid;
+    border-width: 1px;
+    color: #00600F;
+    width: 300px;
+    float: left;
+}
