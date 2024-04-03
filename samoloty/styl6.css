@@ -1,0 +1,53 @@
+#jeden{
+    text-align: center; 
+    height: 150px;
+    width: 75%;
+    font-size: 200%;
+    float: left;
+    
+}
+#dwa{
+    height: 150px;
+    width: 25%;
+    float: left;
+}
+section{
+    background-color: rgb(128, 0, 0);
+    padding: 50px;
+    text-transform: uppercase;
+    clear: both;
+}
+#footer1,#footer3{
+    width: 20%;
+    margin-top: 90px;
+    float: left;
+}
+#footer2{
+    text-align: center;
+    width: 60%;
+    float: left;
+}
+body{
+    font-family: Arial;
+    background-color:  rgb(244, 164, 96);
+    color: white;
+
+}
+p{
+    font-size: 150%;
+    border: dotted;
+    border-color: rgb(169, 169, 169);
+    text-align: center;
+}
+p:hover{
+    background-color:   rgb(169, 169, 169);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td,th,tr{
+    border: solid 1px;
+    border-color: rgb(192, 192, 192);
+    padding: 5px;
+}
