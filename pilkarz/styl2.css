@@ -1,0 +1,49 @@
+header {
+    color: white;
+    text-align: center;
+    height: 330px;
+}
+
+.druzyna {
+    color: white;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 15px;
+    float: left;
+}
+.druzyna:hover{
+    background-color: white;
+    color: black;
+}
+#glowny {
+    color: white;
+}
+
+#lewy {
+    background-color: WhiteSmoke;
+    width: 30%;
+    text-align: center;
+    height: 150px;
+    float: left;
+}
+
+#prawy {
+    background-color: WhiteSmoke;
+    width: 70%;
+    height: 150px;
+    float: left;
+}
+
+body {
+    background-color: SeaGreen;
+    font-family: Verdana;
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 6px;
+}
