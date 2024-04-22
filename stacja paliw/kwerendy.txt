@@ -1,0 +1,9 @@
+SELECT marka, rocznik from samochody where kolor like 'niebieski';
+
+select count(*) as ile from samochody where (marka like  'Opel' or marka like 'Toyota') and stan like 'bardzo dobry';
+
+update samochody set stan='dobry' where rocznik< '2004';
+
+create user 'jan'@'localhost' identified by 'janKowalski1@';
+
+grant SELECT, insert, update on samochody.samochody to 'jan'@'localhost'
