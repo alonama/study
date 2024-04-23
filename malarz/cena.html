@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>malarz</title>
+        <link rel="stylesheet" href="styl_1.css">
+    </head>
+
+    <body>
+        <section id="baner">
+            <h1>Malowanie pokoi i biur</h1>
+        </section>
+        <section id="lewy">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </section>
+        <section id="srodkowy">
+            <h2>Zapotrebowanie na farbę</h2>
+            Powierchnia malowania (m<sup>2</sup>): <input type="number" name="number" id="area"><input
+                type="button" value="POLICZ" onclick="oblicz()"><br>
+            liczba potrebnych puszek:
+            <span id="result"></span>
+            <script>
+                function oblicz() {
+                    var area = document.getElementById("area").value;
+                    document.getElementById("result").innerText = `liczba potrzebnych pushek ${Math.ceil(area / 4)}`;
+                }
+            </script>
+        </section>
+        <section id="prawy">
+            <img src="obraz.png" alt="Próbki farb">
+        </section>
+        <footer>
+            <h3>Malarz</h3>
+            <p>Stronę opracowal:0000000000000</p>
+        </footer>
+    </body>
+
+    </html>
+</body>
+
+</html>

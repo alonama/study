@@ -1,0 +1,11 @@
+select cena, pojemnosc from farby where kolor like 'czerwony';
+
+select farby.kolor, malowanie.liczba_puszek from farby, malowanie where farby.id_farby=malowanie.id_farby and malowanie.id_pomieszczenia=3;
+
+
+SELECT kolor, (cena/pojemnosc) as cena_jednostkowa FROM `farby`;
+
+
+create VIEW pomieszczenie1 as 
+select id_farby, id_sciany, liczba_puszek from malowanie 
+where id_pomieszczenia=1;
