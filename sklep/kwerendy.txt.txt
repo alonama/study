@@ -1,0 +1,10 @@
+SELECT nazwa from towary WHERE promocja!=0;
+
+select cena from towary where nazwa like "Markery 4 szt.";
+
+SELECT dostawcy.id, dostawcy.nazwa, COUNT(*) as liczba_towarow
+from dostawcy, towary
+where towary.idDostawcy=dostawcy.id 
+GROUP BY dostawcy.id;
+
+ALTER table dostawcy ADD COLUMN informacje varchar(100);
