@@ -1,0 +1,44 @@
+#calastrona{
+    font-family: Helvetica, sans-serif;
+    background-color: Linen;
+    color: #222;
+    width: 90%;
+    margin: auto;
+}
+#baner1, #baner2{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+#glowny{
+    padding: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+table{
+    margin: 40px;
+}
+td{
+    padding: 30px;
+    text-align: center;
+    font-weight:bold;
+}
+a{
+    color: #aaa;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+li{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border-bottom: solid 1px white;
+}
