@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Miernik jakości hasła</title>
+</head>
+
+<body>
+    <section id="baner">
+        <a href="index.html">
+            <h1>Sprawdź swoje hasło</h1>
+        </a>
+    </section>
+    <section id="lewy">
+        <h2> Wybierz</h2>
+        <ol>
+            <a href="haslo.html">
+                <li>Sprawdź hasło</li>
+            </a>
+            <a href="zasady.html">
+                <li>Zasady tworzenia hasła</li>
+            </a>
+        </ol>
+    </section>
+    <section id="prawy">
+        <img src="haslo.png">
+        <p>Twoje hasło:<input type="password" name="haslo" id="haslo"><input type="button" onclick="test()"
+                value="Sprawdź"></p>
+        <p id="res"></p>
+    </section>
+    <footer>
+        <h3>Miernik jakości hasła</h3>
+        <p>Stronę opracował:0000000000</p>
+    </footer>
+    <script>
+        function test() {
+            var res = "";
+            var haslo = document.getElementById("haslo").value;
+            if (haslo.length == 0) {
+                res = "<span style='color:red;'>WPISZ HASŁO!</span>";
+            }
+            else if (haslo.length >= 7 && /[0-9]/.test(haslo)) {
+                res = "<span style='color:green;'>DOBRE</span>";
+            }
+            else if (haslo.length >= 4 && haslo.length <= 6 && /\d/.test(haslo)) {
+                res= "<span style='color:blue;'>ŚREDNIE</span>";
+            }
+            else {
+                res="<span style='color:yellow;'>SŁABE</span>";
+            }
+            document.getElementById("res").innerHTML = res;
+
+        }
+    </script>
+</body>
+
+</html>
